@@ -6,10 +6,8 @@ name: release-solution-to-qa
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - '.github/*'
-      - 'README.md'
-      - LICENSE
+    paths:
+      - 'TeamsCreationAutomationWithPowerAutomate/**'
 
 jobs:
   convert-to-managed:
