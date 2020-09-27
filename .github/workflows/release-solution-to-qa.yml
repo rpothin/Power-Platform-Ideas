@@ -6,8 +6,6 @@ name: release-solution-to-qa
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   convert-to-managed:
