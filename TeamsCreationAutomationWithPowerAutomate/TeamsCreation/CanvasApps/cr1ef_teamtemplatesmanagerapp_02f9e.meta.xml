@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr1ef_teamtemplatesmanagerapp_02f9e</Name>
+  <AppVersion>2020-09-26T01:37:22Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.20023.8.0</CreatedByClientVersion>
+  <MinClientVersion>3.20023.8.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","sienaVersion":"20200416T011006Z-3.20023.8.0","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"false","primaryFormFactor":"Phone","publisherVersion":"3.20023.8","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(0, 99, 177, 1)</BackgroundColor>
+  <DisplayName>Team Templates Manager App</DisplayName>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences xsi:nil="true"></AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"Team Templates":{"entitySetName":"cr1ef_teamtemplates","logicalName":"cr1ef_teamtemplate"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies xsi:nil="true"></CdsDependencies>
+  <BackgroundImageUri>/CanvasApps/cr1ef_teamtemplatesmanagerapp_02f9e_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr1ef_teamtemplatesmanagerapp_02f9e_DocumentUri.msapp</DocumentUri>
+</CanvasApp>
