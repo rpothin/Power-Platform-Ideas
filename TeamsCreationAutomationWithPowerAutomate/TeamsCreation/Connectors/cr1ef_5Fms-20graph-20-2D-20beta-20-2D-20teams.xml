@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>4afc4f46-a2b9-49ec-af29-b50c8360af19</connectorid>
+  <description>Custom connector for Teams management through the beta version of the MS Graph API</description>
+  <displayname>MS Graph - Beta - Teams</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>cr1ef_5Fms-20graph-20-2D-20beta-20-2D-20teams</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/cr1ef_5Fms-20graph-20-2D-20beta-20-2D-20teams_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/cr1ef_5Fms-20graph-20-2D-20beta-20-2D-20teams_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/cr1ef_5Fms-20graph-20-2D-20beta-20-2D-20teams_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/cr1ef_5Fms-20graph-20-2D-20beta-20-2D-20teams_iconblob.Png</iconblob>
+</Connector>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps />
+  <Connectors />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20beta202d20teams5f668ee2691bcc1b51_36e28">
+      <connectionreferencedisplayname>MS Graph - Beta - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20beta-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>4afc4f46-a2b9-49ec-af29-b50c8360af19</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedteams_a4b96">
+      <connectionreferencedisplayname>Microsoft Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_teams</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20beta202d20teams5f668ee2691bcc1b51_afb7f">
+      <connectionreferencedisplayname>MS Graph - Beta - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20beta-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>4afc4f46-a2b9-49ec-af29-b50c8360af19</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20teams5f668ee2691bcc1b51_43292">
+      <connectionreferencedisplayname>MS Graph - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>ad06254a-9a2c-4568-bbcb-cddf7cfd8af5</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20teams5f668ee2691bcc1b51_eaa59">
+      <connectionreferencedisplayname>MS Graph - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>ad06254a-9a2c-4568-bbcb-cddf7cfd8af5</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20beta202d20teams5f668ee2691bcc1b51_d49db">
+      <connectionreferencedisplayname>MS Graph - Beta - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20beta-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>4afc4f46-a2b9-49ec-af29-b50c8360af19</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20teams5f668ee2691bcc1b51_1af5d">
+      <connectionreferencedisplayname>MS Graph - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>ad06254a-9a2c-4568-bbcb-cddf7cfd8af5</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cr1ef_sharedcr1ef5fms20graph202d20teams5f668ee2691bcc1b51_36f15">
+      <connectionreferencedisplayname>MS Graph - Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_cr1ef-5fms-20graph-20-2d-20teams-5f668ee2691bcc1b51</connectorid>
+      <customconnectorid>
+        <connectorid>ad06254a-9a2c-4568-bbcb-cddf7cfd8af5</connectorid>
+      </customconnectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
