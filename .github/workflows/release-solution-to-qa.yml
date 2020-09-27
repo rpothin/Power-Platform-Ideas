@@ -6,6 +6,10 @@ name: release-solution-to-qa
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - '.github/*'
+      - 'README.md'
+      - LICENSE
 
 jobs:
   convert-to-managed:
