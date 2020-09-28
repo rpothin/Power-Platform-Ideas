@@ -58,8 +58,8 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Upload Release Asset
-        id: upload-release-asset 
+      - name: Upload Release Asset - Solution
+        id: upload-release-asset-solution
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -69,9 +69,13 @@ jobs:
           asset_name: TeamsCreation.zip
           asset_content_type: application/zip
 
-      - name: Delete unwanted release assets
-        uses: mknejp/delete-release-assets@v1
+      - name: Upload Release Asset - README
+        id: upload-release-asset-readme
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          token: ${{ github.token }}
-          tag: TeamsCreation_${{ env.NOW }}_${{ github.run_number }}
-          assets: 'Source code.*'
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: TeamsCreationAutomationWithPowerAutomate/README.md
+          asset_name: README.md
+          asset_content_type: application/md
