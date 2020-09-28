@@ -47,7 +47,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: TeamsCreation ${{ github.ref }}
+          tag_name: TeamsCreation_${{ github.ref }}
           release_name: TeamsCreation Release ${{ github.ref }}
           body: |
             Changes in this Release:
