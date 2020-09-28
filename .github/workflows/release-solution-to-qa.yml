@@ -1,5 +1,5 @@
 name: release-solution-to-qa
-# upload the solution to the GitHub artifacts and deploy to the QA environment
+# Upload the solution to the GitHub artifacts and deploy to the QA environment
 
 on:
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
     - name: Upload the ready to ship solution to GH artifact store
       uses: actions/upload-artifact@v2
       with:
-        name: managedSolutions
+        name: unmanagedSolutions
         path: out/TeamsCreationAutomationWithPowerAutomate/TeamsCreation.zip
 
   release-to-qa:
@@ -46,7 +46,7 @@ jobs:
     - name: Fetch the ready to ship solution from GH artifact store
       uses: actions/download-artifact@v2
       with:
-        name: managedSolutions
+        name: unmanagedSolutions
         path: out/release/
 
     - run: get-childitem .\out\release\
