@@ -1,4 +1,4 @@
-name: Create Release
+name: create-release
 # Generate a release for the TeamsCreation solution
 
 on:
