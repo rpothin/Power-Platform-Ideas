@@ -68,3 +68,10 @@ jobs:
           asset_path: out/release/TeamsCreation.zip
           asset_name: TeamsCreation.zip
           asset_content_type: application/zip
+
+      - name: Delete unwanted release assets
+        uses: mknejp/delete-release-assets@v1
+        with:
+          token: ${{ github.token }}
+          tag: TeamsCreation_${{ env.NOW }}_${{ github.run_number }}
+          assets: 'Source code.*'
