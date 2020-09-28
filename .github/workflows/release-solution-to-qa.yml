@@ -1,6 +1,6 @@
 name: release-solution-to-qa
 # prepare for releasing to qa:
-#   convert solution to managed (using a build PowerPlatform environment for the conversion)
+#   convert solution to managed (using a build PowerPlatform environment for the conversion) - we will not use a managed solution in this context
 #   upload the solution to the GitHub artifacts and deploy to the QA environment
 
 on:
@@ -27,11 +27,12 @@ jobs:
         solution-file: out/TeamsCreationAutomationWithPowerAutomate/TeamsCreation.zip
         solution-type: Unmanaged
 
+    # 2 next actions not useful in our context
     - name: Import solution as unmanaged to build env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: 'https://powerpanda-build.crm3.dynamics.com/'
-        user-name: 'raphael@powerpanda.onmicrosoft.com'
+        environment-url: ${{ secrets.build_environment_url }}
+        user-name: ${{ secrets.user_name }}
         password-secret: ${{ secrets.password }}
         solution-file: out/TeamsCreationAutomationWithPowerAutomate/TeamsCreation.zip
         force-overwrite: true
@@ -40,8 +41,8 @@ jobs:
     - name: Export solution as managed
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: 'https://powerpanda-build.crm3.dynamics.com/'
-        user-name: 'raphael@powerpanda.onmicrosoft.com'
+        environment-url: ${{ secrets.build_environment_url }}
+        user-name: ${{ secrets.user_name }}
         password-secret: ${{ secrets.password }}
         solution-name: TeamsCreation
         managed: true
@@ -51,7 +52,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: managedSolutions
-        path: out/ship/TeamsCreation.zip
+        path: out/TeamsCreationAutomationWithPowerAutomate/TeamsCreation.zip
 
   release-to-qa:
     needs: [ convert-to-managed ]
@@ -75,8 +76,8 @@ jobs:
     - name: Import solution to qa env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: 'https://powerpanda-qa.crm3.dynamics.com/'
-        user-name: 'raphael@powerpanda.onmicrosoft.com'
+        environment-url: ${{ secrets.qa_environment_url }}
+        user-name: ${{ secrets.user_name }}
         password-secret: ${{ secrets.password }}
         solution-file: out/release/TeamsCreation.zip
         force-overwrite: true

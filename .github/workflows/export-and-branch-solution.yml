@@ -19,15 +19,15 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        environment-url: 'https://teams-integration.crm3.dynamics.com/'
-        user-name: 'raphael@powerpanda.onmicrosoft.com'
+        environment-url: ${{ secrets.dev_environment_url }}
+        user-name: ${{ secrets.user_name }}
         password-secret: ${{ secrets.password }}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: 'https://teams-integration.crm3.dynamics.com/'
-        user-name: 'raphael@powerpanda.onmicrosoft.com'
+        environment-url: ${{ secrets.dev_environment_url }}
+        user-name: ${{ secrets.user_name }}
         password-secret: ${{ secrets.password }}
         solution-name: TeamsCreation
         solution-output-file: out/exported/TeamsCreation.zip
