@@ -4,6 +4,7 @@ name: release-solution-to-qa
 #   upload the solution to the GitHub artifacts and deploy to the QA environment
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
