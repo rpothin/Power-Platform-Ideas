@@ -7,6 +7,7 @@ on:
     branches: [ main ]
     paths:
       - 'TeamsCreationAutomationWithPowerAutomate/**'
+      - '!TeamsCreationAutomationWithPowerAutomate/README.md'
 
 jobs:
   generate-unmanaged-solution:
