@@ -9,7 +9,7 @@ on:
       - 'TeamsCreationAutomationWithPowerAutomate/**'
 
 jobs:
-  convert-to-managed:
+  generate-unmanaged-solution:
     runs-on: windows-latest
     env:
       RUNNER_DEBUG: 1
@@ -33,7 +33,7 @@ jobs:
         path: out/TeamsCreationAutomationWithPowerAutomate/TeamsCreation.zip
 
   release-to-qa:
-    needs: [ convert-to-managed ]
+    needs: [ generate-unmanaged-solution ]
     runs-on: windows-latest
     env:
       RUNNER_DEBUG: 1
