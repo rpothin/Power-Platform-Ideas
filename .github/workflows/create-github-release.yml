@@ -35,6 +35,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set current date as env variable
+        run: echo "::set-env name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')"
+
       - name: Fetch the ready to ship solution from GH artifact store
         uses: actions/download-artifact@v2
         with:
@@ -47,8 +50,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: TeamsCreation_${{ steps.date.outputs.date }}_${{ github.run_id }}
-          release_name: TeamsCreation Release - ${{ steps.date.outputs.date }} - ${{ github.run_id }}
+          tag_name: TeamsCreation_$NOW_${{ github.run_number }}
+          release_name: TeamsCreation Release - $NOW - ${{ github.run_number }}
           body: |
             Changes in this Release:
             - Initialization of the TeamsCreation solution
