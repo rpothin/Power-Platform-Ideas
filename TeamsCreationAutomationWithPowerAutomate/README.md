@@ -25,7 +25,7 @@ Be sure to keep the **Application (client) ID** and the **Client Secret** of the
 
 ## Configuration of the solution
 
-1. Download the **TeamsCreation.zip** file from the latest [**TeamsCreation Release**](https://github.com/rpothin/Power-Platform-Ideas/releases/tag/TeamsCreation_20200928_10)
+1. Download the **TeamsCreation.zip** file from the latest [**TeamsCreation Release**](https://github.com/rpothin/Power-Platform-Ideas/releases/tag/TeamsCreation_20200929_11)
 2. Import it to the targeted environment
 3. Open the **MS Graph - Teams** custom connector in the **Teams Creation** solution
 4. Click on the **Edit** button
