@@ -23,7 +23,7 @@ This folder contains some PowerShell functions to automate the Set up of the **A
 
 ## Functions
 
-- **New-DataverseEnvironment** | [**SETUPGUIDE - Environments**](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#environments) - Create a new Dataverse environment if it does not exist.
+- **New-DataverseEnvironment** | [**SETUPGUIDE - Dataverse Environments**](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#dataverse-environments) - Create a new Dataverse environment if it does not exist.
 - **New-AzureAdAppRegistration** | [**SETUPGUIDE - Create an App Registration in your AAD Environment**](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#create-an-app-registration-in-your-aad-environment) - Create an Azure AD app registration if it does not exist.
 - **Install-AzureDevOpsExtensions** | [**SETUPGUIDE - Install Azure DevOps Extensions**](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#install-azure-devops-extensions) - Installed extensions in an Azure DevOps organization if they are not already installed.
 - **New-AzureDevOpsProject** | Prerequisite for [**SETUPGUIDE - Clone the YAML Pipelines from GitHub to your Azure DevOps instance**](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) - Create an Azure DevOps project if it does not exist.
@@ -31,7 +31,7 @@ This folder contains some PowerShell functions to automate the Set up of the **A
 
 ### New-DataverseEnvironment
 
-> This function does not work for now whith PowerShell 7 (*['Exception calling "AcquireToken with "4" argument(s)" Error with Add-PowerAppsAccount PowerShell Cmdlet](https://crmchap.co.uk/exception-calling-acquiretoken-with-4-arguments-error-with-add-powerappsaccount-powershell-cmdlet/) by [Joe Griffin](https://twitter.com/joejgriffin)*).
+> This function does not work for now with PowerShell 7 (*['Exception calling "AcquireToken with "4" argument(s)" Error with Add-PowerAppsAccount PowerShell Cmdlet](https://crmchap.co.uk/exception-calling-acquiretoken-with-4-arguments-error-with-add-powerappsaccount-powershell-cmdlet/) by [Joe Griffin](https://twitter.com/joejgriffin)*).
 
 Create a new Dataverse environment if it does not exist (*search based on the DisplayName provided*).
 
