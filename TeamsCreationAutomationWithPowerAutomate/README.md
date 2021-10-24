@@ -1,7 +1,3 @@
-# Power Platform Ideas
+# Teams Creation Automation using Power Automate
 
-Things I worked on during my spare time, mostly around the Power Platform.
-
-# License
-
-This project is licensed under the [MIT](https://github.com/rpothin/Power-Platform-Ideas/blob/main/LICENSE) license.
+[Blog article on this subject](https://medium.com/rapha%C3%ABl-pothin/using-power-automate-in-your-teams-creation-process-59b230aeda85)
